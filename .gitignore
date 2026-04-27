@@ -1,0 +1,9 @@
+**/target/
+**/node_modules/
+**/dist/
+**/.vite/
+**/.idea/
+**/.vscode/
+**/*.log
+**/tsconfig.tsbuildinfo
+.DS_Store

@@ -1,0 +1,26 @@
+server:
+  port: 5000
+  shutdown: graceful
+
+spring:
+  application:
+    name: similar-products
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+external-products-api:
+  base-url: http://localhost:3001
+  connect-timeout-ms: 500
+  response-timeout-ms: 1400
+  max-connections: 512
+  pending-acquire-max-count: 2048
+  cache-ttl: PT1M
+  detail-concurrency: 8

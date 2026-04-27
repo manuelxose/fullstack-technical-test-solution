@@ -1,0 +1,8 @@
+external-products-api:
+  base-url: http://localhost:3001
+  connect-timeout-ms: 200
+  response-timeout-ms: 500
+  max-connections: 64
+  pending-acquire-max-count: 128
+  cache-ttl: PT1M
+  detail-concurrency: 8
